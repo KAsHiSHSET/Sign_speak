@@ -1,87 +1,69 @@
-SignSpeak
-SignSpeak Logo
+# 🤟 SignSpeak – Real-Time Sign Language Translator
 
-Breaking Communication Barriers: Real-time Sign Language Detection and Translation
-SignSpeak is an advanced, machine learning-powered application that bridges the communication gap between the hearing and deaf communities through real-time sign language recognition and translation.
+> **Breaking Communication Barriers**  
+> SignSpeak is a real-time sign language detection and translation web app powered by machine learning, enabling seamless communication between the hearing and deaf communities.
 
-License: MIT Python TensorFlow OpenCV
+![image](https://github.com/user-attachments/assets/2bbb4a06-3baa-4cef-a4a2-2a21ff6b7d59)
 
-✨ Features
-Real-time Sign Language Detection: Accurately recognizes American Sign Language (ASL) hand gestures through your webcam
-Text-to-Speech Output: Converts detected signs into audible speech for seamless communication
-Responsive Web Interface: Access the application from any device with a modern browser
-High Detection Accuracy: Powered by a custom-trained Convolutional Neural Network (CNN)
-Low Latency: Optimized for real-time performance with minimal delay
-Educational Mode: Learn sign language with interactive tutorials and practice exercises
-🖼️ Screenshots
-SignSpeak Interface
-SignSpeak Web Interface with Real-time Detection
 
-🚀 Installation
-Prerequisites
-Python 3.10 (Recommended)
-Webcam or camera device
-Internet connection (for initial setup)
-Quick Install
-Clone the repository:
 
+---
+
+## ✨ Features
+
+- 🎥 **Real-Time Sign Language Detection**  
+  Detects American Sign Language (ASL) hand gestures using your webcam.
+
+- 🔊 **Text-to-Speech Output**  
+  Converts detected signs to audible speech for smooth communication.
+
+- 💻 **Responsive Web Interface**  
+  Clean and modern UI accessible from any device.
+
+- 🧠 **High Accuracy Detection**  
+  Built with a custom-trained Convolutional Neural Network (CNN).
+
+- ⚡ **Low Latency**  
+  Optimized for real-time performance.
+
+- 📚 **Educational Mode**  
+  Learn ASL with interactive tutorials and practice exercises.
+
+---
+
+## 🖼️ Screenshots
+
+![image](https://github.com/user-attachments/assets/60d936a2-0503-429d-bb2b-7fb49cf45bab)
+
+![image](https://github.com/user-attachments/assets/252b6bd1-cf7d-48b8-abf8-046546eb4317)
+
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+- Python 3.10 (⚠️ Avoid Python 3.13+)
+- A webcam
+- Internet connection (for first-time setup)
+
+### ⚙️ Installation
+
+```bash
+# Clone the repository
 git clone https://github.com/KAsHiSHSET/Sign_speak.git
 cd SignSpeak
-Create and activate a virtual environment:
 
+# Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
+# For Windows
+venv\Scripts\activate
+# For Mac/Linux
+source venv/bin/activate
 
+# Install dependencies
 pip install -r requirements.txt
-Start the application:
 
+# Run the application
 python app.py
-Open your browser and visit:
-
-http://localhost:5000
-📚 How It Works
-SignSpeak uses a deep learning approach to recognize sign language gestures:
-
-Hand Detection: OpenCV processes webcam input to isolate hand regions
-Feature Extraction: Key points and hand shapes are identified and normalized
-Classification: Our custom CNN model classifies the hand gesture into corresponding letters/words
-Translation: Recognized signs are converted to text and optionally speech
-User Interface: Results are displayed in real-time through our Flask-powered web interface
-🧠 Model Architecture
-Our CNN model was trained on a dataset of over 20,000 sign language images covering the ASL alphabet and common phrases. The architecture includes:
-
-Input layer for normalized hand images (64x64x1)
-4 convolutional layers with max-pooling
-2 fully connected layers
-Dropout layers to prevent overfitting
-SoftMax output layer for multi-class classification
-🛠️ Technology Stack
-Backend: Python, Flask
-Machine Learning: TensorFlow, Keras, OpenCV
-Frontend: HTML, CSS, JavaScript, Bootstrap
-Data Processing: NumPy, Pandas
-Deployment: Docker support for easy deployment
-📋 Future Roadmap
- Basic ASL alphabet recognition
- Web interface implementation
- Real-time processing optimization
- Support for full ASL grammar and syntax
- Mobile application development
- Offline mode functionality
- Multi-language sign language support
- Integration with AR/VR platforms
-👥 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-Fork the repository
-Create your feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-🙏 Acknowledgments
-ASL Dataset Contributors
-All open-source libraries and tools used in this project
